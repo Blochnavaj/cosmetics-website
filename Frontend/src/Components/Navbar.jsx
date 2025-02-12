@@ -94,7 +94,7 @@ function Navbar() {
                   <div
                     className={`relative flex items-center pb-1 cursor-pointer ${
                       activeLink === item.name
-                        ? "after:absolute after:md:w-full after:h-[2px] after:w-fit after:bg-green-600 after:bottom-0 after:left-0"
+                        ? "after:absolute after:md:w-full after:h-[2px] after:w-full after:bg-green-600 after:bottom-0 after:left-0"
                         : ""
                     }`}
                     onClick={() => {
