@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import logo from "../assets/logo.svg";
-import { MdPersonOutline, MdOutlineArrowDropDown } from "react-icons/md";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 import { IoReorderThree } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("home");
   const [productDropdown, setProductDropdown] = useState(false);
-  const [mobileProductDropdown, setMobileProductDropdown] = useState(false);  
+  const [mobileProductDropdown, setMobileProductDropdown] = useState(false);
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -21,17 +21,17 @@ function Navbar() {
   };
 
   const links = [
-    { name: "Home", path: "#home" },
-    { name: "Product", path: "#product" },
-    { name: "About Us", path: "#about" },
-    { name: "Contact Us", path: "#contact" },
+    { name: "Home", path: "home" },
+    { name: "Product", path: "product" },
+    { name: "About Us", path: "about" },
+    { name: "Contact Us", path: "contact" },
   ];
 
   const productItems = ["Makeup", "Skin Care", "Hair Care", "Fragrances"];
 
   return (
     <>
-      <nav className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+      <nav className="w-full bg-white shadow-md fixed top-0 left-0 z-50  ">
         <div className="flex justify-between items-center px-6 py-4">
           {/* Logo */}
           <div className="flex items-center">
@@ -54,12 +54,14 @@ function Navbar() {
               >
                 <Link
                   to={item.path}
-                  onClick={() => setActiveLink(item.name)}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  spy={true}
                   className={`flex items-center pb-1 cursor-pointer ${
-                    activeLink === item.name
-                      ? "after:absolute after:w-full after:h-[2px] after:bg-green-600 after:bottom-0 after:left-0"
-                      : ""
+                    activeLink === item.name ? "text-green-600 font-semibold border-b-2 border-green-600" : ""
                   }`}
+                  onClick={() => setActiveLink(item.name)}
                 >
                   {item.name}
                   {item.name === "Product" && (
@@ -72,7 +74,11 @@ function Navbar() {
                   <ul className="absolute left-0 mt-2 w-40 bg-white shadow-md border rounded-lg z-10">
                     {productItems.map((product, i) => (
                       <li key={i} className="px-4 py-2 hover:bg-gray-100">
-                        <Link to={`#${product.toLowerCase().replace(" ", "")}`}>
+                        <Link
+                          to={product.toLowerCase().replace(" ", "")}
+                          smooth={true}
+                          duration={500}
+                        >
                           {product}
                         </Link>
                       </li>
@@ -90,42 +96,61 @@ function Navbar() {
             toggle ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out`}
         >
-          {/* Cancel Button */}
+          {/* Close Button */}
           <div className="flex justify-end p-4">
             <RxCross2 className="text-2xl cursor-pointer" onClick={closeMenu} />
           </div>
 
-          {/* Menu Links */}
+          {/* Mobile Menu Links */}
           <ul className="flex flex-col gap-4 px-6 py-4">
             {links.map((item, index) => (
               <li key={index}>
-                <div
-                  className={`relative flex items-center pb-1 cursor-pointer ${
-                    activeLink === item.name
-                      ? "after:absolute after:w-full after:h-[2px] after:bg-green-600 after:bottom-0 after:left-0"
-                      : ""
-                  }`}
-                  onClick={() => {
-                    setActiveLink(item.name);
-                    if (item.name === "Product") {
-                      setMobileProductDropdown(!mobileProductDropdown);
-                    } else {
-                      closeMenu();
-                    }
-                  }}
-                >
-                  {item.name}
-                  {item.name === "Product" && (
+                {item.name === "Product" ? (
+                  <div
+                    className={`flex items-center pb-1 cursor-pointer ${
+                      activeLink === item.name ? "text-green-600 font-semibold border-b-2 border-green-600" : ""
+                    }`}
+                    onClick={() => setMobileProductDropdown(!mobileProductDropdown)}
+                  >
+                    {item.name}
                     <MdOutlineArrowDropDown className="ml-1" />
-                  )}
-                </div>
+                  </div>
+                ) : (
+                  <Link
+                    to={item.path}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    spy={true}
+                    className={`cursor-pointer pb-1 ${
+                      activeLink === item.name ? "text-green-600 font-semibold border-b-2 border-green-600" : ""
+                    }`}
+                    onClick={() => {
+                      setActiveLink(item.name);
+                      closeMenu();
+                    }}
+                  >
+                    {item.name}
+                  </Link>
+                )}
 
-                {/* Mobile Dropdown for Product */}
+                {/* Mobile Product Dropdown */}
                 {item.name === "Product" && mobileProductDropdown && (
                   <ul className="mt-2 ml-4 border-l-2 border-gray-300">
                     {productItems.map((product, i) => (
                       <li key={i} className="px-4 py-2 hover:bg-gray-100">
-                        <Link to={`#${product.toLowerCase().replace(" ", "")}`} onClick={closeMenu}>
+                        <Link
+                          to={product.toLowerCase().replace(" ", "")}
+                          smooth={true}
+                          duration={500}
+                          offset={-70}
+                          spy={true}
+                          className="cursor-pointer"
+                          onClick={() => {
+                            setActiveLink("Product");
+                            closeMenu();
+                          }}
+                        >
                           {product}
                         </Link>
                       </li>

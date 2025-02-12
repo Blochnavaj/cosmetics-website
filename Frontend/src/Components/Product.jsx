@@ -79,19 +79,12 @@ function Product() {
           "image": "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png?width=1080&height=1080",
           "description": "Deeply moisturizes and softens skin with coconut oil."
         },
-        {
-          "id": 10,
-          "name": "Volumizing Mascara",
-          "category": "Makeup",
-          "price": 11.99,
-          "image": "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png?width=1080&height=1080",
-          "description": "Gives lashes volume and definition without clumping."
-        }
+      
       ]
       
   return (
     <>
-        <div id='product' className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 ">
+      <div id='product' className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 ">
       {product.map((product) => (
         <div key={product.id} className="border p-4 rounded-lg shadow-md cursor-pointer">
           <img src={product.image} alt={product.name} className="w-48 h-48 object-cover rounded-md mx-auto  flex justify-center items-center text-center" />

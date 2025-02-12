@@ -3,16 +3,16 @@ import Navbar from './Components/Navbar'
  
 import Slider from './Components/Slider'
 import Product from './Components/Product'
+import About_us from './Components/About_us'
  
  function App() {
    return (
     <>
      <Navbar/>
-     {/* <div className='mt-[100px]'> */}
-
+ 
      <Slider/>
-     {/* </div> */}
-     <Product/>
+      <Product/>
+     <About_us/>
     
     </>
    )
