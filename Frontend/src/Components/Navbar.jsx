@@ -15,6 +15,11 @@ function Navbar() {
     setToggle(!toggle);
   };
 
+  const closeMenu = () => {
+    setToggle(false);
+    setMobileProductDropdown(false);
+  };
+
   const links = [
     { name: "Home", path: "#home" },
     { name: "Product", path: "#product" },
@@ -80,53 +85,57 @@ function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        {toggle && (
-          <div className="fixed top-0 right-0 w-[80%] h-full bg-white shadow-lg z-50 md:hidden">
-            {/* Cancel Button */}
-            <div className="flex justify-end p-4">
-              <RxCross2 className="text-2xl cursor-pointer" onClick={handleToggle} />
-            </div>
-
-            {/* Menu Links */}
-            <ul className="flex flex-col gap-4 px-6 py-4">
-              {links.map((item, index) => (
-                <li key={index}>
-                  <div
-                    className={`relative flex items-center pb-1 cursor-pointer ${
-                      activeLink === item.name
-                        ? "after:absolute after:w-full after:h-[2px] after:bg-green-600 after:bottom-0 after:left-0"
-                        : ""
-                    }`}
-                    onClick={() => {
-                      setActiveLink(item.name);
-                      if (item.name === "Product") {
-                        setMobileProductDropdown(!mobileProductDropdown);
-                      }
-                    }}
-                  >
-                    {item.name}
-                    {item.name === "Product" && (
-                      <MdOutlineArrowDropDown className="ml-1" />
-                    )}
-                  </div>
-
-                  {/* Mobile Dropdown for Product */}
-                  {item.name === "Product" && mobileProductDropdown && (
-                    <ul className="mt-2 ml-4">
-                      {productItems.map((product, i) => (
-                        <li key={i} className="px-4 py-2 hover:bg-gray-100">
-                          <Link to={`#${product.toLowerCase().replace(" ", "")}`}>
-                            {product}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ))}
-            </ul>
+        <div
+          className={`fixed top-0 right-0 w-[80%] h-full bg-white shadow-lg z-50 md:hidden transform ${
+            toggle ? "translate-x-0" : "translate-x-full"
+          } transition-transform duration-300 ease-in-out`}
+        >
+          {/* Cancel Button */}
+          <div className="flex justify-end p-4">
+            <RxCross2 className="text-2xl cursor-pointer" onClick={closeMenu} />
           </div>
-        )}
+
+          {/* Menu Links */}
+          <ul className="flex flex-col gap-4 px-6 py-4">
+            {links.map((item, index) => (
+              <li key={index}>
+                <div
+                  className={`relative flex items-center pb-1 cursor-pointer ${
+                    activeLink === item.name
+                      ? "after:absolute after:w-full after:h-[2px] after:bg-green-600 after:bottom-0 after:left-0"
+                      : ""
+                  }`}
+                  onClick={() => {
+                    setActiveLink(item.name);
+                    if (item.name === "Product") {
+                      setMobileProductDropdown(!mobileProductDropdown);
+                    } else {
+                      closeMenu();
+                    }
+                  }}
+                >
+                  {item.name}
+                  {item.name === "Product" && (
+                    <MdOutlineArrowDropDown className="ml-1" />
+                  )}
+                </div>
+
+                {/* Mobile Dropdown for Product */}
+                {item.name === "Product" && mobileProductDropdown && (
+                  <ul className="mt-2 ml-4 border-l-2 border-gray-300">
+                    {productItems.map((product, i) => (
+                      <li key={i} className="px-4 py-2 hover:bg-gray-100">
+                        <Link to={`#${product.toLowerCase().replace(" ", "")}`} onClick={closeMenu}>
+                          {product}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
     </>
   );

@@ -27,8 +27,8 @@ function Slider() {
   }, [currentIndex]);
 
   return (
-    <div className="w-full overflow-hidden mt-[100px]">  
-      <div className="flex justify-center items-center p-6">
+    <div className="w-full overflow-hidden ">  
+      <div className="flex justify-center items-center mt-28">
         <div className="relative w-full max-w-7xl">
           <div className="relative w-full overflow-hidden rounded-lg">
             <img 
