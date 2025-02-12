@@ -27,12 +27,26 @@ function Slider() {
   }, [currentIndex]);
 
   return (
-    <div className='flex justify-center items-center p-6'>
-      <div className='relative w-full max-w-7xl'>
-        <div className='relative w-full overflow-hidden rounded-lg'>
-          <img src={images[currentIndex]} className='w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[550px] object-cover ' alt={`Slide ${currentIndex + 1}`} />
+    <div className="w-full overflow-hidden mt-[100px]">  
+      <div className="flex justify-center items-center p-6">
+        <div className="relative w-full max-w-7xl">
+          <div className="relative w-full overflow-hidden rounded-lg">
+            <img 
+              src={images[currentIndex]} 
+              className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[550px] object-cover"
+              alt={`Slide ${currentIndex + 1}`} 
+            />
+          </div>
         </div>
-        {/* Arrows */}
+      </div>
+    </div>
+  );
+}
+
+export default Slider;
+
+
+     {/* Arrows */}
         {/* <div className='flex justify-between items-center absolute top-1/2 w-full px-4 transform -translate-y-1/2'>
           <button onClick={goToPrevious} className='text-3xl text-white bg-gray-700 p-2 rounded-full hover:bg-gray-900'>
             <FaAngleLeft />
@@ -41,9 +55,3 @@ function Slider() {
             <FaAngleRight />
           </button>
         </div> */}
-      </div>
-    </div>
-  );
-}
-
-export default Slider;

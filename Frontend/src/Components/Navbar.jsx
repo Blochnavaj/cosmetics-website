@@ -26,7 +26,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="w-full bg-white shadow-md">
+      <nav className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
         <div className="flex justify-between items-center px-6 py-4">
           {/* Logo */}
           <div className="flex items-center">
@@ -81,7 +81,7 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {toggle && (
-          <div className="fixed top-0 right-0 w-full h-full bg-gray-50 shadow-lg">
+          <div className="fixed top-0 right-0 w-[80%] h-full bg-white shadow-lg z-50 md:hidden">
             {/* Cancel Button */}
             <div className="flex justify-end p-4">
               <RxCross2 className="text-2xl cursor-pointer" onClick={handleToggle} />
@@ -94,7 +94,7 @@ function Navbar() {
                   <div
                     className={`relative flex items-center pb-1 cursor-pointer ${
                       activeLink === item.name
-                        ? "after:absolute after:md:w-full after:h-[2px] after:w-full after:bg-green-600 after:bottom-0 after:left-0"
+                        ? "after:absolute after:w-full after:h-[2px] after:bg-green-600 after:bottom-0 after:left-0"
                         : ""
                     }`}
                     onClick={() => {
