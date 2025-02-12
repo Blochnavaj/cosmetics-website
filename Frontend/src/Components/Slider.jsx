@@ -27,10 +27,10 @@ function Slider() {
   }, [currentIndex]);
 
   return (
-    <div className="w-full overflow-hidden ">  
+    <div className="w-full overflow-hidden " id='home'>  
       <div className="flex justify-center items-center mt-28">
         <div className="relative w-full max-w-7xl">
-          <div className="relative w-full overflow-hidden rounded-lg">
+          <div className="relative w-full overflow-hidden rounded-lg px-1.5">
             <img 
               src={images[currentIndex]} 
               className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[550px] object-cover"
