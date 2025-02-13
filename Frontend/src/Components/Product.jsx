@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Product() {
+  const { t } = useTranslation();
   const scrollRef1 = useRef(null);
   const scrollRef2 = useRef(null);
 
@@ -14,38 +16,46 @@ function Product() {
   };
 
   const products1 = [
-    { id: 1, name: "Matte Lipstick", category: "Makeup", price: 15.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "A long-lasting matte lipstick." },
-    { id: 2, name: "Hydrating Foundation", category: "Makeup", price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "Lightweight, full-coverage foundation." },
-    { id: 2, name: "Hydrating Foundation", category: "Makeup", price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "Lightweight, full-coverage foundation." },
-    { id: 2, name: "Hydrating Foundation", category: "Makeup", price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "Lightweight, full-coverage foundation." },
-    { id: 2, name: "Hydrating Foundation", category: "Makeup", price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "Lightweight, full-coverage foundation." },
-    { id: 2, name: "Hydrating Foundation", category: "Makeup", price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "Lightweight, full-coverage foundation." },
-    { id: 2, name: "Hydrating Foundation", category: "Makeup", price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "Lightweight, full-coverage foundation." },
-    { id: 2, name: "Hydrating Foundation", category: "Makeup", price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "Lightweight, full-coverage foundation." },
-    { id: 2, name: "Hydrating Foundation", category: "Makeup", price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "Lightweight, full-coverage foundation." },
-    { id: 2, name: "Hydrating Foundation", category: "Makeup", price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "Lightweight, full-coverage foundation." },
-    { id: 2, name: "Hydrating Foundation", category: "Makeup", price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "Lightweight, full-coverage foundation." },
+    { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting matte lipstick.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
+    { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
   ];
 
   const products2 = [
-    { id: 8, name: "BB Cream", category: "Makeup", price: 18.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "All-in-one beauty balm." },
-    { id: 9, name: "Luxury Perfume", category: "Fragrances", price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "A long-lasting fragrance." },
-    { id: 9, name: "Luxury Perfume", category: "Fragrances", price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "A long-lasting fragrance." },
-    { id: 9, name: "Luxury Perfume", category: "Fragrances", price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "A long-lasting fragrance." },
-    { id: 9, name: "Luxury Perfume", category: "Fragrances", price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "A long-lasting fragrance." },
-    { id: 9, name: "Luxury Perfume", category: "Fragrances", price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "A long-lasting fragrance." },
-    { id: 9, name: "Luxury Perfume", category: "Fragrances", price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "A long-lasting fragrance." },
-    { id: 9, name: "Luxury Perfume", category: "Fragrances", price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "A long-lasting fragrance." },
-    { id: 9, name: "Luxury Perfume", category: "Fragrances", price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "A long-lasting fragrance." },
-    { id: 9, name: "Luxury Perfume", category: "Fragrances", price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "A long-lasting fragrance." },
-    { id: 9, name: "Luxury Perfume", category: "Fragrances", price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: "A long-lasting fragrance." },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("All-in-one beauty balm.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
+    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
   ];
 
   return (
-    <div className="w-full py-12 ">
+    <div className="w-full py-12">
       <div className="flex justify-center items-center">
         <h1 className="font-bold text-4xl sm:text-5xl mb-6">
-          Our <span className="text-green-500">Products</span>
+          Our <span className="text-green-500 font-bold">Product </span>
         </h1>
       </div>
 
