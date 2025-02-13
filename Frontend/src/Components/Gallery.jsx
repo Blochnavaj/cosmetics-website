@@ -11,7 +11,7 @@ const images = [
 
 function Gallery() {
   return (
-    <section className="p-8 bg-gradient-to-tr from-pink-200 to-purple-300">
+    <section className="p-8 bg-gradient-to-tr from-pink-200 to-purple-300 mt-16">
       <h2 className="text-4xl font-extrabold text-center mb-10 text-gray-800">Our Stunning Gallery</h2>
       <motion.div 
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" 
