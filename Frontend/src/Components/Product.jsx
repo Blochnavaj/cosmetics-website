@@ -52,7 +52,7 @@ function Product() {
    ];
 
   return (
-    <div className="w-full py-12">
+    <div className="w-full py-7">
       <div className="flex justify-center items-center">
         <h1 className="font-bold text-4xl sm:text-5xl mb-6">
           Our <span className="text-green-500 font-bold">Product </span>
