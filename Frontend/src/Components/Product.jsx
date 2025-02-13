@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
+
 function Product() {
   const { t } = useTranslation();
   const scrollRef1 = useRef(null);
@@ -16,7 +17,7 @@ function Product() {
   };
 
   const products1 = [
-    { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting matte lipstick.") },
+    { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://www.transparentpng.com/download/makeup/sell-cosmetics-brush-and-powder-makeup-png-transparent-free-download-ghOowx.png", description: t("A long-lasting matte lipstick.") },
     { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
     { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
     { id: 2, name: t("Hydrating Foundation"), category: t("Makeup"), price: 25.49, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("Lightweight, full-coverage foundation.") },
@@ -35,21 +36,20 @@ function Product() {
   ];
 
   const products2 = [
-    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("All-in-one beauty balm.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-    { id: 9, name: t("Luxury Perfume"), category: t("Fragrances"), price: 49.99, image: "https://sdcdn.io/mac/in/mac_sku_MY3N41_1x1_0.png", description: t("A long-lasting fragrance.") },
-  ];
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+    { id: 8, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },
+   ];
 
   return (
     <div className="w-full py-12">
