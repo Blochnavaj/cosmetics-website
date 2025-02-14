@@ -7,7 +7,7 @@ function Newsletter() {
      <>
      <section className="p-8 bg-gradient-to-br from-purple-200 to-pink-300 text-center">
       <motion.h2 
-        className="text-4xl font-extrabold text-gray-800 mb-6"
+        className="text-4xl font-extrabold text-green-500 mb-6"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}

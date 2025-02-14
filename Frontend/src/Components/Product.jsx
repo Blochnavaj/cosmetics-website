@@ -16,6 +16,9 @@ function Product() {
   };
 
   const products1 = [
+    { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://atlas-content-cdn.pixelsquid.com/stock-images/lipstick-64m4o3E-600.jpg", description: t("A long-lasting matte lipstick.") },
+    { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://atlas-content-cdn.pixelsquid.com/stock-images/lipstick-64m4o3E-600.jpg", description: t("A long-lasting matte lipstick.") },
+    { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://atlas-content-cdn.pixelsquid.com/stock-images/lipstick-64m4o3E-600.jpg", description: t("A long-lasting matte lipstick.") },
     { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://www.transparentpng.com/download/makeup/sell-cosmetics-brush-and-powder-makeup-png-transparent-free-download-ghOowx.png", description: t("A long-lasting matte lipstick.") },
     { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://www.transparentpng.com/download/makeup/sell-cosmetics-brush-and-powder-makeup-png-transparent-free-download-ghOowx.png", description: t("A long-lasting matte lipstick.") },
     { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://www.transparentpng.com/download/makeup/sell-cosmetics-brush-and-powder-makeup-png-transparent-free-download-ghOowx.png", description: t("A long-lasting matte lipstick.") },
@@ -23,8 +26,7 @@ function Product() {
     { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://www.transparentpng.com/download/makeup/sell-cosmetics-brush-and-powder-makeup-png-transparent-free-download-ghOowx.png", description: t("A long-lasting matte lipstick.") },
     { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://www.transparentpng.com/download/makeup/sell-cosmetics-brush-and-powder-makeup-png-transparent-free-download-ghOowx.png", description: t("A long-lasting matte lipstick.") },
     { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://www.transparentpng.com/download/makeup/sell-cosmetics-brush-and-powder-makeup-png-transparent-free-download-ghOowx.png", description: t("A long-lasting matte lipstick.") },
-    { id: 1, name: t("Matte Lipstick"), category: t("Makeup"), price: 15.99, image: "https://www.transparentpng.com/download/makeup/sell-cosmetics-brush-and-powder-makeup-png-transparent-free-download-ghOowx.png", description: t("A long-lasting matte lipstick.") },
-   ];
+    ];
 
   const products2 = [
     { id: 3, name: t("BB Cream"), category: t("Makeup"), price: 18.99, image: "https://static.vecteezy.com/system/resources/thumbnails/035/197/725/small_2x/cosmetics-products-transparent-background-fashion-outfit-profucts-png.png", description: t("All-in-one beauty balm.") },

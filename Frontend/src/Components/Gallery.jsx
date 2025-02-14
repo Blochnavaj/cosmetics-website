@@ -1,18 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import luxury_cosmetic from '../assets/luxury_cosmetics.jpg';
+import luxury_cosmetic_2 from '../assets/luxury_cosmetic_2.jpg';
+import luxury_cosmetic_3 from '../assets/luxury_cosmetic_3.jpg';
+import luxury_cosmetic_4 from '../assets/luxury_cosmetic_4.jpg';
+import luxury_cosmetic_5 from '../assets/luxury_cosmetic_5.jpg';
+import luxury_cosmetic_6 from '../assets/luxury_cosmetic_6.jpg';
 
 const images = [
   luxury_cosmetic,
-  luxury_cosmetic,
-  luxury_cosmetic,
-  luxury_cosmetic,
+  luxury_cosmetic_2,
+  luxury_cosmetic_3,
+  luxury_cosmetic_4,
+  luxury_cosmetic_5,
+  luxury_cosmetic_6,
+ 
 ];
 
 function Gallery() {
   return (
-    <section className="p-8 bg-gradient-to-tr from-pink-200 to-purple-300 mt-16">
-      <h2 className="text-4xl font-extrabold text-center mb-10 text-gray-800">Our Stunning Gallery</h2>
+    <section className="p-8 bg-gradient-to-tr bg-pink-200 mt-16">
+      <h2 className="text-4xl font-extrabold text-center mb-10 text-green-500">Our Stunning Gallery</h2>
       <motion.div 
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" 
         initial={{ opacity: 0, y: 50 }} 
