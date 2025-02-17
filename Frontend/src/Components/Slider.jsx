@@ -1,30 +1,57 @@
- 
- import React from 'react';
- import { motion } from 'framer-motion';
- 
- function Slider() {
-   return (
-    <div className="w-full max-h-full flex justify-center items-center mt-[10rem] mb-2 " id="home">
-    <motion.div 
-      className="w-full max-w-7xl" 
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1 }}
-    >
-      <div className="relative w-full overflow-hidden rounded-lg px-1.5">
-        <iframe 
-          className="w-full h-[200px] sm:h-[200px] md:h-[450px] lg:h-[550px] object-cover"
-          src="https://www.youtube.com/embed/CxZI6R1VKJY?autoplay=1&mute=1&loop=1&playlist=CxZI6R1VKJY"
-          title="YouTube video player" 
-          frameBorder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowFullScreen
-        ></iframe>
+import React, { useState, useEffect } from 'react';
+import Banner_1 from '../assets/Banner_1.jpg'
+import Banner_2 from '../assets/Banner_2.jpg'
+import Banner_3 from '../assets/Banner_3.jpg'
+import Banner_4 from '../assets/Banner_4.jpg'
+import Banner_5 from '../assets/Banner_5.jpg'
+import Banner_6 from '../assets/Banner_6.jpg'
+
+function Slider() {
+  const banners = [
+     Banner_1,
+     Banner_2,
+     Banner_3,
+     Banner_4,
+     Banner_5,
+     Banner_6
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto sliding every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length);
+    }, 5000); // 5 seconds
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
+  
+  return (
+    <div className="relative mt-[8rem]">
+   
+
+      {/* Banner Images */}
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform duration-500"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          {banners.map((banner, index) => (
+            <div key={index} className="w-full   flex-shrink-0 px-6 ">
+              <img
+                src={banner}
+                alt={`Banner ${index + 1}`}
+                className="   md:w-full sm:w-[1000px] h-[200px] sm:h-[150px] md:h-[300px] lg:h-[400px] object-cover rounded-2xl"
+              />
+            </div>
+          ))}
+        </div>
       </div>
-    </motion.div>
-  </div>
-   );
- }
- 
- export default Slider;
- 
+    </div>
+  );
+}
+
+export default Slider;

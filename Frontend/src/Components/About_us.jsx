@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import about_us from '../assets/about_us.jpg';
 
@@ -7,7 +6,7 @@ function About_us() {
   const { t } = useTranslation();
 
   return (
-    <motion.div 
+    <div 
       className="bg-pink-50 text-gray-900 py-12 px-6 md:px-20" id="about"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +21,7 @@ function About_us() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-12 items-center">
-        <motion.img 
+        <img 
           src={about_us}
           alt={t("cosmetics")}
           className="rounded-lg shadow-lg w-full"
@@ -32,7 +31,7 @@ function About_us() {
           viewport={{ once: true }}
         />
         
-        <motion.div 
+        <div 
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -47,9 +46,9 @@ function About_us() {
             <li>✨ {t("dermatologically_tested")}</li>
             <li>🌍 {t("sustainable_packaging")}</li>
           </ul>
-        </motion.div>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
