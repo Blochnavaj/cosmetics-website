@@ -8,7 +8,7 @@ function Contact() {
 
   return (
     <motion.div
-      className="bg-pink-50 text-gray-900 py-12 px-6 md:px-20" id="contact"
+      className="bg-pink-50 text-gray-900 py-12 px-6 md:px-20 mt-11" id="contact"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
