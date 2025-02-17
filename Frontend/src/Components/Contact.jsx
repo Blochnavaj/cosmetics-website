@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next"; // Import useTranslation hook
+import { useTranslation } from "react-i18next";  
 import logo from "../assets/logo.svg";
 
 function Contact() {
-  const { t } = useTranslation(); // Use the translation hook
+  const { t } = useTranslation();  
 
   return (
     <motion.div
@@ -21,15 +21,20 @@ function Contact() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="md:absolute md:left-20">
+
+  <img src={logo} alt="Company Logo" className="w-40 mx-auto mb-6 " />
+</div>
+
+      <div className="grid md:grid-cols-2 gap-12 items-center md:mt-3">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <img src={logo} alt="Company Logo" className="w-40 mx-auto mb-6" />
-          <h2 className="text-3xl font-semibold text-green-500 mb-4">{t("our_details")}</h2>
+        
+          <h2 className="text-3xl font-semibold text-green-500 mb-4 md:mt-14">{t("our_details")}</h2>
           <p className="text-gray-700 mb-2">📧 {t("email")}: contact@glowessence.com</p>
           <p className="text-gray-700 mb-2">📞 {t("phone")}: +123 456 7890</p>
           <p className="text-gray-700 mb-2">📍 {t("location")}: 123 Beauty Street, Glam City</p>
