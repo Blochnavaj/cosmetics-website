@@ -1,35 +1,35 @@
-import React from 'react';
-import Navbar from './Components/Navbar';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Contact from "./Pages/Contact";
+import Login from "./Pages/Login";
+import Orders from "./Pages/Orders";
+import PlaceOrder from "./Pages/PlaceOrder";
+import About from "./Pages/About";
+import Collection from "./Pages/Collection";
+import Product from "./Pages/Product";
+import Cart from "./Pages/Cart";
+import Navbar from "./Components/Navbar"
 
-
-import Login from './Pages/Login';
-import Register from './Pages/Register';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from './Pages/Home';
-import AboutPage from './Pages/AboutPage';
-import ContactUs from './Pages/ContactUs';
-import ProductPage from './Pages/ProductPage';
-import Footer from './Components/Footer';
 
 function App() {
   return (
-    <Router basename="/cosmetics-website" >
-      <Navbar />
-      
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path='/about-us' element={<AboutPage/>} />
-        <Route path ='/contact-us' element={<ContactUs/>} />
-        <Route path ='/product' element={<ProductPage/>} />
-      </Routes>
-
-    
-    
-    
-      <Footer /> 
-    </Router>
+    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+      <BrowserRouter basename="/cosmetics-website">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/collection" element={<Collection />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/product/:productId" element={<Product />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/place-order" element={<PlaceOrder />} />
+          <Route path="/orders" element={<Orders />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
