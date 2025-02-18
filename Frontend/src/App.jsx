@@ -10,6 +10,7 @@ import Collection from "./Pages/Collection";
 import Product from "./Pages/Product";
 import Cart from "./Pages/Cart";
 import Navbar from "./Components/Navbar"
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/place-order" element={<PlaceOrder />} />
           <Route path="/orders" element={<Orders />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
