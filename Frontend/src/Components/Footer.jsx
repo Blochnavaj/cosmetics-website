@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/frontend_assets/assets'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -21,10 +22,10 @@ function Footer() {
           <div>
             <p className="font-semibold text-gray-800 mb-3">Company</p>
             <ul className="text-gray-600 space-y-2">
-              <li><a href="/">About Us</a></li>
-              <li><a href="/">Careers</a></li>
-              <li><a href="/">Blog</a></li>
-              <li><a href="/">Contact</a></li>
+              <li><Link to='/about' >About Us</Link></li>
+              <li><Link to='/'>Careers</Link></li>
+              <li><Link to='/'>Blog</Link></li>
+              <li><Link to='/'>Contact</Link></li>
             </ul>
           </div>
 
@@ -32,10 +33,10 @@ function Footer() {
           <div>
             <p className="font-semibold text-gray-800 mb-3">Support</p>
             <ul className="text-gray-600 space-y-2">
-              <li><a href="/">Help Center</a></li>
-              <li><a href="/">FAQ</a></li>
-              <li><a href="/">Privacy Policy</a></li>
-              <li><a href="/">Terms of Service</a></li>
+              <li><Link to='/'>Help Center</Link></li>
+              <li><Link to='/'>FAQ</Link></li>
+              <li><Link to='/'>Privacy Policy</Link></li>
+              <li><Link to='/'>Terms of Service</Link></li>
             </ul>
           </div>
 
@@ -50,20 +51,7 @@ function Footer() {
         </div>
       </div>
 
-      {/* Small Map Section */}
-      <div className="mt-10">
-        <p className="font-semibold text-gray-800 mb-2">Find Us</p>
-        <iframe
-          className="w-full h-40 rounded-lg"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509371!2d144.95592331550414!3d-37.8172097420145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1f4cf3b%3A0x4bdb9df0b1e57a1a!2sMelbourne%20CBD!5e0!3m2!1sen!2sau!4v1616813035377!5m2!1sen!2sau"
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
-     <div>
-     <hr className='mt-2' />
-     <p className=' text-sm text-center font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, at!</p>
-     </div>
+     
     </div>
   )
 }

@@ -65,6 +65,7 @@ import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
 
 
+
 import logo from './logo.png'
 import hero_img from './hero_img.png'
 import cart_icon from './cart_icon.png'
@@ -83,8 +84,29 @@ import contact_img from './contact_img.png'
 import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
+import Beauty from './Beauty.png'
+import Books from './Books.png'
+import  Events from './Events.png'
+import  Fashion from './Fashion.png'
+import  food from './food.png'
+import Herbal_care from './Herbal_care.png'
+import  Jewelry from './Jewelry.png'
+import  kitchen from './kitchen.png'
+import   Movie from './Movie.png'
+import   Music from './Music.png'
+
 
 export const assets = {
+    Beauty,
+    Books,
+    Events,
+    Fashion,
+    Herbal_care,
+    Jewelry,
+    Movie,
+    Music,
+    kitchen,
+    food,
     logo,
     hero_img,
     cart_icon,
