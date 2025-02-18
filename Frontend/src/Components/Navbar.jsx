@@ -10,27 +10,29 @@ function Navbar() {
     <>
      <div className='flex justify-between items-center py-4 font-medium'>
     
-      <img src={assets.logo} className='w-36' alt="" />
+    <Link to='/'>
+    <img src={assets.logo} className='w-36' alt="" />
+    </Link>
 
       <ul className='hidden sm:flex gap-5 text-sm text-gray-500'>
       <NavLink to='/' className='flex flex-col items-center ' >  
           <p>Home</p>
-          <hr className='w-2/4 border-none h-[1.5px] bg-gray-500 hidden' />
+          <hr className='w-2/4 border-none h-[1.5px] bg-black hidden' />
         </NavLink>
 
         <NavLink to='/collection' className='flex flex-col items-center ' >  
           <p>Collection</p>
-          <hr className='w-2/4 border-none h-[1.5px] bg-gray-500 hidden' />
+          <hr className='w-2/4 border-none h-[1.5px] bg-black hidden' />
         </NavLink>
 
         <NavLink to='/contact' className='flex flex-col items-center ' >  
           <p>Contact</p>
-          <hr className='w-2/4 border-none h-[1.5px] bg-gray-500 hidden' />
+          <hr className='w-2/4 border-none h-[1.5px] bg-black hidden' />
         </NavLink>
 
         <NavLink to='/about' className='flex flex-col items-center ' >  
           <p>About</p>
-          <hr className='w-2/4 border-none h-[1.5px] bg-gray-500 hidden' />
+          <hr className='w-2/4 border-none h-[1.5px] bg-black hidden' />
         </NavLink>
       </ul>
   
