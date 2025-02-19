@@ -1,67 +1,80 @@
-import React from 'react'
-import one_image from '../assets/frontend_assets/One_items.webp'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import  pro_1 from '../assets/frontend_assets/pro_1.png';
 
 function MostCategory() {
-
-  const containerData = [
-    {
-      id: 1,
-      title: "Nature Gallery",
-      images: [
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-        
-      ]
-    },
-    {
-      id: 2,
-      title: "City Life",
-      images: [
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-      ]
-    },
-    {
-      id: 3,
-      title: "Space Wonders",
-      images: [
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-        { id: 1, src: one_image, text: "Beautiful Lake" },
-      ]
-    }
-  ];
-  
-
   return (
-    <div> 
-   <div className="flex flex-wrap justify-center gap-6 p-6 mt-4 ">
-      {containerData.map((container) => (
-        <div key={container.id} className="bg-white shadow-lg rounded-lg p-4 w-80">
-          <h2 className="text-xl font-bold mb-4">{container.title}</h2>
-          <div className="grid grid-cols-2 gap-4">
-            {container.images.map((image) => (
-              <div key={image.id} className="text-center">
-                <img
-                  src={image.src}
-                  alt={image.text}
-                  className="w-full h-24 object-cover rounded-md"
-                />
-                <p className="text-sm mt-2">{image.text}</p>
-              </div>
-            ))}
-          </div>
+    <div className="flex flex-wrap items-center justify-around gap-6 p-6 mt-4">
+      {/* Nature Gallery */}
+      <div className="bg-pink-200 shadow-lg rounded-lg p-4 w-96">
+        <h2 className="text-xl font-bold mb-4 text-gray-400">Nature Gallery</h2>
+        <div className="grid grid-cols-2 gap-4">
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="Beautiful Lake" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">Beautiful Lake</p>
+          </Link>
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="Beautiful Lake" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">Beautiful Lake</p>
+          </Link>
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="Beautiful Lake" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">Beautiful Lake</p>
+          </Link>
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="Beautiful Lake" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">Beautiful Lake</p>
+          </Link>
         </div>
-      ))}
+      </div>
+
+      {/* City Life */}
+      <div className="bg-green-300 shadow-lg rounded-lg p-4 w-96">
+        <h2 className="text-xl font-bold mb-4 text-gray-400">City Life</h2>
+        <div className="grid grid-cols-2 gap-4">
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="City View" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">City View</p>
+          </Link>
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="City View" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">City View</p>
+          </Link>
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="City View" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">City View</p>
+          </Link>
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="City View" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">City View</p>
+          </Link>
+        </div>
+      </div>
+
+      {/* Space Wonders */}
+      <div className="bg-lime-300 shadow-lg rounded-lg p-4 w-96">
+        <h2 className="text-xl font-bold mb-4 text-gray-400">Space Wonders</h2>
+        <div className="grid grid-cols-2 gap-4">
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="Galaxy View" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">Galaxy View</p>
+          </Link>
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="Galaxy View" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">Galaxy View</p>
+          </Link>
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="Galaxy View" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">Galaxy View</p>
+          </Link>
+          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
+            <img src={pro_1} alt="Galaxy View" className="w-full h-36 object-cover rounded-md" />
+            <p className="text-sm mt-2 text-center">Galaxy View</p>
+          </Link>
+        </div>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
-export default MostCategory
+export default MostCategory;
