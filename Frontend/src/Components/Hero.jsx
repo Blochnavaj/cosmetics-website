@@ -3,7 +3,7 @@ import { assets } from '../assets/frontend_assets/assets'
 
 function Hero() {
     return (
-        <div className='flex flex-col sm:flex-row border border-gray-400  '>
+        <div className='flex flex-col sm:flex-row border border-gray-400 mt-[100px]  '>
             <div className='w-full sm:w:1/2 flex items-center justify-center py-10 sm:py-0'>
                 <div className='text-gray-600'>
                     <div className='flex items-center gap-2'>

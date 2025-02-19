@@ -136,9 +136,9 @@ export const products = [
         description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
         price:349,
         image:[pro_1],
-        category:"skincare",
-        subCategory:"skin",
-        
+        category:"Face",
+        subCategory:"Dry",
+        brand : 'Brand A',
         date:18022025,
         bestseller:true
     },
@@ -148,7 +148,7 @@ export const products = [
         description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
         price:249,
         image:[pro_2],
-        category:"skincare",
+        category:"Eyes",
         subCategory:"skin",
        
         date:18022025,
@@ -253,10 +253,9 @@ export const products = [
         name: "Men Round Neck Pure Cotton T-shirt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 120,
-        image: [p_img11],
+        image:[pro_2],
 
-
-        sizes: ["S", "M", "L"],
+         
         date: 1716623345448,
         bestseller: false
     },

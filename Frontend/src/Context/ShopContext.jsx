@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import { products } from "../assets/frontend_assets/assets";
 
 
@@ -9,10 +9,15 @@ import { products } from "../assets/frontend_assets/assets";
     const currency = '$';
     const delivery_fees = 10;
 
+    const [search , setSearch] = useState('');
+    const [showSearch , setShowSearch] = useState(true);
+
+
     const value = {
     products,
     currency,
-    delivery_fees
+    delivery_fees,
+    search , setSearch,showSearch , setShowSearch
     }
     return (
         <ShopContext.Provider value={value}>

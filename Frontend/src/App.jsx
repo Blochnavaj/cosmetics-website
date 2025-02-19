@@ -11,6 +11,7 @@ import Product from "./Pages/Product";
 import Cart from "./Pages/Cart";
 import Navbar from "./Components/Navbar"
 import Footer from "./Components/Footer";
+import SearchBar from "./Components/SearchBar";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
       <BrowserRouter basename="/cosmetics-website">
         <Navbar />
+        <SearchBar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/collection" element={<Collection />} />
