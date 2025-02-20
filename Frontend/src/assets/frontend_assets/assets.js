@@ -85,6 +85,19 @@ import contact_img from './contact_img.png'
 import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
+import Beauty from './Beauty.png'
+import  Books from './Books.png'
+import  Events from './Events.png'
+import  food from './food.png'
+import Herbal_care from './Herbal_care.png'
+import Home_care from './Home_care.png'
+import  Jewelry from './Jewelry.png'
+import   Fashion from './Fashion.png'
+import  kitchen from './kitchen.png'
+import  Music from './Music.png'
+import  Movie from './Movie.png'
+ 
+
 
 export const assets = {
     logo,
@@ -104,7 +117,8 @@ export const assets = {
     contact_img,
     razorpay_logo,
     stripe_logo,
-    cross_icon
+    cross_icon,
+    Beauty,Events,food,Jewelry,kitchen,Home_care,Herbal_care,Books, Fashion,Music,Movie
 }
 
 export const products = [
