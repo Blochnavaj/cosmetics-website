@@ -15,7 +15,7 @@ function LatestCollection() {
     
 
   return (
-    <div> 
+    <div className='mt-7'> 
 
         <div className='text-center '>
             <Tittle text1='Latest' text2='Collection'/>

@@ -96,10 +96,12 @@ import   Fashion from './Fashion.png'
 import  kitchen from './kitchen.png'
 import  Music from './Music.png'
 import  Movie from './Movie.png'
- 
+import summer_collection from './summer_collection.jpg'
+import winter_collection from './winter_collection.jpg'
 
 
 export const assets = {
+   
     pro11,
     pro12,
     pro13,pro14,pro15,pro16,pro17,pro18,
@@ -121,7 +123,8 @@ export const assets = {
     razorpay_logo,
     stripe_logo,
     cross_icon,
-    Beauty,Events,food,Jewelry,kitchen,Home_care,Herbal_care,Books, Fashion,Music,Movie
+    Beauty,Events,food,Jewelry,kitchen,Home_care,Herbal_care,Books, Fashion,Music,Movie, summer_collection,
+    winter_collection
 }
 
 export const products = [
@@ -130,7 +133,7 @@ export const products = [
         name: "Women Round Neck Cotton Top",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 100,
-        image: [pro_1],
+        image: [pro_1,pro_2],
         category: "Lips",
         subCategory: "Oily",
         

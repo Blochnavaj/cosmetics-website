@@ -1,77 +1,43 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { assets } from '../assets/frontend_assets/assets';
- 
+import React from "react";
+import { FaArrowRight } from "react-icons/fa";
+import { assets } from "../assets/frontend_assets/assets";
+
 function MostCategory() {
   return (
-    <div className="flex flex-wrap items-center justify-around gap-6 p-6 mt-4">
-      {/* Nature Gallery */}
-      <div className="bg-pink-200 shadow-lg rounded-lg p-4 w-96">
-        <h2 className="text-xl font-bold mb-4 text-gray-400">Nature Gallery</h2>
-        <div className="grid grid-cols-2 gap-4">
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={assets.pro11} alt="Beautiful Lake" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">Beautiful Lake</p>
-          </Link>
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={assets.pro12} alt="Beautiful Lake" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">Beautiful Lake</p>
-          </Link>
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={assets.pro13} alt="Beautiful Lake" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">Beautiful Lake</p>
-          </Link>
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={ assets.pro14} alt="Beautiful Lake" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">Beautiful Lake</p>
-          </Link>
+    <div className="flex flex-col items-center justify-center w-full py-10 mt-3">
+      {/* Image Container */}
+      <div className="grid  md:flex   justify-center gap-6 w-full max-w-screen-xl">
+        
+        {/* First Category */}
+        <div className="w-full  sm:w-[40%] lg:w-[50%]   relative flex flex-col items-center">
+          <div className="overflow-hidden       group w-full">
+            <img
+              src={assets.summer_collection} 
+              alt="Summer Collection"
+              className="w-full h-auto  object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            />
+          </div>
+          <h2 className="text-2xl font-bold text-gray-800 mt-4">Summer Collection</h2>
+          <button className="mt-2 px-6 py-3 text-white bg-pink-500 rounded-lg flex items-center gap-2 transition-all hover:bg-pink-600">
+            Shop Now <FaArrowRight />
+          </button>
         </div>
-      </div>
 
-      {/* City Life */}
-      <div className="bg-green-300 shadow-lg rounded-lg p-4 w-96">
-        <h2 className="text-xl font-bold mb-4 text-gray-400">City Life</h2>
-        <div className="grid grid-cols-2 gap-4">
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={ assets.pro15} alt="City View" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">City View</p>
-          </Link>
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={assets.pro16} alt="City View" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">City View</p>
-          </Link>
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={ assets.pro17} alt="City View" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">City View</p>
-          </Link>
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={ assets.pro18} alt="City View" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">City View</p>
-          </Link>
+        {/* Second Category */}
+        <div className="w-full sm:w-[40%]   lg:w-[50%]  relative flex flex-col items-center">
+          <div className="overflow-hidden   group w-full">
+            <img
+              src={assets.winter_collection} 
+              alt="Winter Collection"
+              className="w-full h-auto object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            />
+          </div>
+          <h2 className="text-2xl font-bold text-gray-800 mt-4">Winter Collection</h2>
+          <button className="mt-2 px-6 py-3 text-white bg-blue-500 rounded-lg flex items-center gap-2 transition-all hover:bg-blue-600">
+            Shop Now <FaArrowRight />
+          </button>
         </div>
-      </div>
 
-      {/* Space Wonders */}
-      <div className="bg-lime-300 shadow-lg rounded-lg p-4 w-96">
-        <h2 className="text-xl font-bold mb-4 text-gray-400">Space Wonders</h2>
-        <div className="grid grid-cols-2 gap-4">
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={assets.pro18} alt="Galaxy View" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">Galaxy View</p>
-          </Link>
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={assets.pro18} alt="Galaxy View" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">Galaxy View</p>
-          </Link>
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={assets.pro18} alt="Galaxy View" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">Galaxy View</p>
-          </Link>
-          <Link to="/product" className="hover:scale-105 transition-transform duration-300">
-            <img src={assets.pro18} alt="Galaxy View" className="w-full h-36 object-cover rounded-md" />
-            <p className="text-sm mt-2 text-center">Galaxy View</p>
-          </Link>
-        </div>
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function AllProductList() {
   const scrollRef = useRef(null);
+  const navigate = useNavigate();
 
   const scrollLeft = () => {
     if (scrollRef.current) {
@@ -18,67 +19,65 @@ function AllProductList() {
     }
   };
 
+  const handleProductClick = () => {
+    navigate("/collection"); // Navigate to collection page
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top smoothly
+  };
+
+  const products = [
+    { name: "Beauty", img: assets.Beauty },
+    { name: "Books", img: assets.Books },
+    { name: "Events", img: assets.Events },
+    { name: "Fashion", img: assets.Fashion },
+    { name: "Herbal", img: assets.Herbal_care },
+    { name: "Jewelry", img: assets.Jewelry },
+    { name: "Movie", img: assets.Movie },
+    { name: "Music", img: assets.Music },
+  ];
+
   return (
-    <div className="relative mt-5 mx-auto lg:max-w-screen-xl lg:w-full">
-      {/* Large Screens (Full Width) */}
-      <div className="hidden lg:flex flex-wrap justify-center bg-slate-300 p-4 border rounded-lg lg:gap-[45px]">
-        {[
-          { name: "Beauty", img: assets.Beauty },
-          { name: "Books", img: assets.Books },
-          { name: "Events", img: assets.Events },
-          { name: "Fashion", img: assets.Fashion },
-          { name: "Herbal", img: assets.Herbal_care },
-          { name: "Jewelry", img: assets.Jewelry },
-          { name: "Movie", img: assets.Movie },
-          { name: "Music", img: assets.Music },
-        ].map((item, index) => (
-          <Link to='/collection'
+    <div className="relative mt-5 mx-auto max-w-screen-xl w-full">
+      {/* Large Screens */}
+      <div className="hidden lg:flex flex-wrap justify-center bg-gradient-to-r from-purple-200 to-pink-300 p-6 border rounded-2xl shadow-xl gap-6">
+        {products.map((item, index) => (
+          <div
             key={index}
-            className="border px-3 py-2 mx-2 rounded-lg border-black bg-white cursor-pointer flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-blue-500 "
+            onClick={handleProductClick}
+            className="border p-4 rounded-xl bg-white bg-opacity-60 backdrop-blur-lg cursor-pointer flex flex-col items-center transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:border-pink-500"
           >
-            <img src={item.img} className="w-16" alt={item.name} />
-            <p className="mt-2 font-semibold text-lg">{item.name}</p>
-          </Link>
+            <img src={item.img} className="w-20" alt={item.name} />
+            <p className="mt-2 font-bold text-lg text-gray-800">{item.name}</p>
+          </div>
         ))}
       </div>
 
       {/* Medium Screens (Scrollable) */}
       <div
         ref={scrollRef}
-        className="md:flex hidden lg:hidden items-center justify-start overflow-x-hidden whitespace-nowrap bg-slate-300 p-4 border rounded-lg scrollbar-hide"
+        className="md:flex hidden lg:hidden items-center overflow-x-hidden scrollbar-hide bg-gradient-to-r from-purple-100 to-pink-200 p-4 border rounded-xl shadow-md"
       >
-        {[
-          { name: "Beauty", img: assets.Beauty },
-          { name: "Books", img: assets.Books },
-          { name: "Events", img: assets.Events },
-          { name: "Fashion", img: assets.Fashion },
-          { name: "Herbal", img: assets.Herbal_care },
-          { name: "Jewelry", img: assets.Jewelry },
-          { name: "Movie", img: assets.Movie },
-          { name: "Music", img: assets.Music },
-        ].map((item, index) => (
-          <Link to='/collection'
+        {products.map((item, index) => (
+          <div
             key={index}
-            className="border px-3 py-2 mx-2 rounded-lg border-black bg-white cursor-pointer flex flex-col items-center "
+            onClick={handleProductClick}
+            className="border p-4 mx-2 rounded-xl bg-white bg-opacity-60 backdrop-blur-lg cursor-pointer flex flex-col items-center transition-all hover:scale-105 hover:shadow-xl"
           >
             <img src={item.img} className="w-16" alt={item.name} />
-            <p className="mt-2 font-semibold text-lg">{item.name}</p>
-          </Link>
+            <p className="mt-2 font-semibold text-gray-700">{item.name}</p>
+          </div>
         ))}
       </div>
 
-      {/* Left Arrow (Only on md screens) */}
+      {/* Scroll Buttons */}
       <button
         onClick={scrollLeft}
-        className="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-md md:flex hidden lg:hidden"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white p-3 rounded-full shadow-lg md:flex hidden lg:hidden hover:bg-pink-600"
       >
         <FaArrowLeft />
       </button>
-
-      {/* Right Arrow (Only on md screens) */}
       <button
         onClick={scrollRight}
-        className="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full shadow-md md:flex hidden lg:hidden"
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white p-3 rounded-full shadow-lg md:flex hidden lg:hidden hover:bg-pink-600"
       >
         <FaArrowRight />
       </button>
