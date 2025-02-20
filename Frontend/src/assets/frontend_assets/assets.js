@@ -100,6 +100,9 @@ import  Movie from './Movie.png'
 
 
 export const assets = {
+    pro11,
+    pro12,
+    pro13,pro14,pro15,pro16,pro17,pro18,
     logo,
     hero_img,
     cart_icon,
@@ -129,7 +132,7 @@ export const products = [
         price: 100,
         image: [pro_1],
         category: "Lips",
-        skinType: "Oliy",
+        subCategory: "Oily",
         
         date: 1716634345448,
         bestseller: true
@@ -141,7 +144,7 @@ export const products = [
         price: 200,
         image: [pro11,pro12,pro13,pro14],
         category: "Face",
-        skinType: "Oliy",
+        subCategory: "Oily",
         sizes: ["M", "L", "XL"],
         date: 1716621345448,
         bestseller: true
@@ -153,7 +156,7 @@ export const products = [
         price: 220,
         image: [pro_2],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
         
         date: 1716234545448,
         bestseller: true
@@ -165,8 +168,7 @@ export const products = [
         price: 110,
         image: [pro_3],
         category: "Face",
-        skinType: "Oliy",
-        sizes: ["S", "M", "XXL"],
+        subCategory: "Oily",
         date: 1716621345448,
         bestseller: true
     },
@@ -177,8 +179,8 @@ export const products = [
         price: 130,
         image: [pro_4],
         category: "Lips",
-        skinType: "Oliy",
-        sizes: ["M", "L", "XL"],
+        subCategory: "Oily",
+       
         date: 1716622345448,
         bestseller: true
     },
@@ -189,7 +191,7 @@ export const products = [
         price: 140,
         image: [pro_5],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
         
         date: 1716623423448,
         bestseller: true
@@ -201,7 +203,7 @@ export const products = [
         price: 190,
         image: [pro_6],
         category: "Face",
-        skinType: "Dry",
+        subCategory: "Dry",
         
         date: 1716621542448,
         bestseller: false
@@ -213,7 +215,7 @@ export const products = [
         price: 140,
         image: [pro_7],
         category: "Face",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716622345448,
         bestseller: false
     },
@@ -224,7 +226,7 @@ export const products = [
         price: 100,
         image: [pro_8],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
         sizes: ["M", "L", "XL"],
         date: 1716621235448,
         bestseller: false
@@ -236,7 +238,7 @@ export const products = [
         price: 110,
         image: [pro_9],
         category: "Face",
-        skinType: "Dry",
+        subCategory: "Dry",
         
         date: 1716622235448,
         bestseller: false
@@ -248,7 +250,7 @@ export const products = [
         price: 120,
         image: [pro_10],
         category: "Face",
-        skinType: "Oliy",
+        subCategory: "Oily",
         
         date: 1716623345448,
         bestseller: false
@@ -260,7 +262,7 @@ export const products = [
         price: 150,
         image: [pro11],
         category: "Face",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716624445448,
         bestseller: false
     },
@@ -271,7 +273,7 @@ export const products = [
         price: 130,
         image: [pro12],
         category: "Lips",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716625545448,
         bestseller: false
     },
@@ -282,7 +284,7 @@ export const products = [
         price: 160,
         image: [pro13],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716626645448,
         bestseller: false
     },
@@ -293,7 +295,7 @@ export const products = [
         price: 140,
         image: [pro14],
         category: "Face",
-        skinType: "Dry",
+        subCategory: "Dry",
                date: 1716627745448,
         bestseller: false
     },
@@ -304,7 +306,7 @@ export const products = [
         price: 170,
         image: [ pro15],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716628845448,
         bestseller: false
     },
@@ -315,7 +317,7 @@ export const products = [
         price: 150,
         image: [ pro16],
         category: "Face",
-        skinType: "Dry",
+        subCategory: "Dry",
                date: 1716629945448,
         bestseller: false
     },
@@ -326,7 +328,7 @@ export const products = [
         price: 180,
         image: [ pro17],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716631045448,
         bestseller: false
     },
@@ -337,7 +339,7 @@ export const products = [
         price: 160,
         image: [ pro18],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716632145448,
         bestseller: false
     },
@@ -348,7 +350,7 @@ export const products = [
         price: 190,
         image: [ pro19],
         category: "Lips",
-        skinType: "Dry",
+        subCategory: "Dry",
                date: 1716633245448,
         bestseller: false
     },
@@ -359,7 +361,7 @@ export const products = [
         price: 170,
         image: [ pro20],
         category: "Lips",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716634345448,
         bestseller: false
     },
@@ -370,7 +372,7 @@ export const products = [
         price: 200,
         image: [pro21],
         category: "Lips",
-        skinType: "Dry",
+        subCategory: "Dry",
                date: 1716635445448,
         bestseller: false
     },
@@ -381,7 +383,7 @@ export const products = [
         price: 180,
         image: [pro_22],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716636545448,
         bestseller: false
     },
@@ -392,7 +394,7 @@ export const products = [
         price: 210,
         image: [pro_23],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716637645448,
         bestseller: false
     },
@@ -403,7 +405,7 @@ export const products = [
         price: 190,
         image: [pro_24],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716638745448,
         bestseller: false
     },
@@ -414,7 +416,7 @@ export const products = [
         price: 220,
         image: [pro_25],
         category: "Lips",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716639845448,
         bestseller: false
     },
@@ -425,7 +427,7 @@ export const products = [
         price: 200,
         image: [pro_26],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716640945448,
         bestseller: false
     },
@@ -436,7 +438,7 @@ export const products = [
         price: 230,
         image: [pro_27],
         category: "Face",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716642045448,
         bestseller: false
     },
@@ -447,7 +449,7 @@ export const products = [
         price: 210,
         image: [pro_28],
         category: "Lips",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716643145448,
         bestseller: false
     },
@@ -458,7 +460,7 @@ export const products = [
         price: 240,
         image: [pro_29],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716644245448,
         bestseller: false
     },
@@ -469,7 +471,7 @@ export const products = [
         price: 220,
         image: [pro_30],
         category: "Face",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716645345448,
         bestseller: false
     },
@@ -480,7 +482,7 @@ export const products = [
         price: 250,
         image: [pro_31],
         category: "Face",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716646445448,
         bestseller: false
     },
@@ -491,7 +493,7 @@ export const products = [
         price: 230,
         image: [p_img33],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716647545448,
         bestseller: false
     },
@@ -502,7 +504,7 @@ export const products = [
         price: 260,
         image: [p_img34],
         category: "Lips",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716648645448,
         bestseller: false
     },
@@ -513,7 +515,7 @@ export const products = [
         price: 240,
         image: [p_img35],
         category: "Lips",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716649745448,
         bestseller: false
     },
@@ -524,7 +526,7 @@ export const products = [
         price: 270,
         image: [p_img36],
         category: "Lips",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716650845448,
         bestseller: false
     },
@@ -535,7 +537,7 @@ export const products = [
         price: 250,
         image: [p_img37],
         category: "Lips",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716651945448,
         bestseller: false
     },
@@ -546,7 +548,7 @@ export const products = [
         price: 280,
         image: [p_img38],
         category: "Face",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716653045448,
         bestseller: false
     },
@@ -557,7 +559,7 @@ export const products = [
         price: 260,
         image: [p_img39],
         category: "Face",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716654145448,
         bestseller: false
     },
@@ -568,7 +570,7 @@ export const products = [
         price: 290,
         image: [p_img40],
         category: "Face",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716655245448,
         bestseller: false
     },
@@ -579,7 +581,7 @@ export const products = [
         price: 270,
         image: [p_img41],
         category: "Face",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716656345448,
         bestseller: false
     },
@@ -590,7 +592,7 @@ export const products = [
         price: 300,
         image: [p_img42],
         category: "Hair",
-        skinType: "Oliy",
+        subCategory: "Oily",
                date: 1716657445448,
         bestseller: false
     },
@@ -601,7 +603,7 @@ export const products = [
         price: 280,
         image: [p_img43],
         category: "Hair",
-        skinType: "Dry",
+        subCategory: "Dry",
                date: 1716658545448,
         bestseller: false
     },
@@ -612,7 +614,7 @@ export const products = [
         price: 310,
         image: [p_img44],
         category: "Lips",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716659645448,
         bestseller: false
     },
@@ -623,7 +625,7 @@ export const products = [
         price: 290,
         image: [p_img45],
         category: "Face",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716660745448,
         bestseller: false
     },
@@ -634,7 +636,7 @@ export const products = [
         price: 320,
         image: [p_img46],
         category: "Face",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716661845448,
         bestseller: false
     },
@@ -645,7 +647,7 @@ export const products = [
         price: 300,
         image: [p_img47],
         category: "Hair",
-        skinType: "Dry",
+        subCategory: "Dry",
                date: 1716662945448,
         bestseller: false
     },
@@ -656,7 +658,7 @@ export const products = [
         price: 330,
         image: [p_img48],
         category: "Face",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716664045448,
         bestseller: false
     },
@@ -667,7 +669,7 @@ export const products = [
         price: 310,
         image: [p_img49],
         category: "Hair",
-        skinType: "Dry",
+        subCategory: "Dry",
                date: 1716665145448,
         bestseller: false
     },
@@ -678,7 +680,7 @@ export const products = [
         price: 340,
         image: [p_img50],
         category: "Hair",
-        skinType: "Dry",
+        subCategory: "Dry",
                date: 1716666245448, bestseller: false
     },
     {
@@ -688,7 +690,7 @@ export const products = [
         price: 320,
         image: [p_img51],
         category: "Lips",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716667345448,
         bestseller: false
     },
@@ -699,7 +701,7 @@ export const products = [
         price: 350,
         image: [p_img52],
         category: "Face",
-        skinType: " Sensitive",
+        subCategory: " Sensitive",
                date: 1716668445448,
         bestseller: false
     }
