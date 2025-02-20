@@ -14,7 +14,7 @@ function Home() {
        <AllProductList/>
        <LatestCollection/>
        <BestSeller/>
-       <MostCategory/>
+       {/* <MostCategory/> */}
        <OurPolicy/>
        <NewsLetterBox/>
     </div>

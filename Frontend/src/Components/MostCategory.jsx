@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import  pro_1 from '../assets/frontend_assets/pro_1.png';
-
+ 
 function MostCategory() {
   return (
     <div className="flex flex-wrap items-center justify-around gap-6 p-6 mt-4">

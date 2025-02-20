@@ -10,7 +10,6 @@
 // import p_img7 from './p_img7.png'
 // import p_img8 from './p_img8.png'
 // import p_img9 from './p_img9.png'
-// import p_img10 from './p_img10.png'
 import pro_1 from './pro_1.png'
 import pro_2 from './pro_2.png'
 import pro_3 from './pro_3.png'
@@ -21,27 +20,30 @@ import pro_7 from './pro_7.png'
 import pro_8 from './pro_8.png'
 import pro_9 from './pro_9.png'
 import pro_10 from './pro_10.png'
-import p_img11 from './p_img11.png'
-import p_img12 from './p_img12.png'
-import p_img13 from './p_img13.png'
-import p_img14 from './p_img14.png'
-import p_img15 from './p_img15.png'
-import p_img16 from './p_img16.png'
-import p_img17 from './p_img17.png'
-import p_img18 from './p_img18.png'
-import p_img19 from './p_img19.png'
-import p_img20 from './p_img20.png'
-import p_img21 from './p_img21.png'
-import p_img22 from './p_img22.png'
-import p_img23 from './p_img23.png'
-import p_img24 from './p_img24.png'
-import p_img25 from './p_img25.png'
-import p_img26 from './p_img26.png'
-import p_img27 from './p_img27.png'
-import p_img28 from './p_img28.png'
-import p_img29 from './p_img29.png'
-import p_img30 from './p_img30.png'
-import p_img31 from './p_img31.png'
+import pro11 from './pro11.png'
+import pro12 from './pro12.png'
+import pro13 from './pro13.png'
+import pro14 from './pro14.png'
+import pro15 from './pro15.png'
+import pro16 from './pro16.png'
+import pro17 from './pro17.png'
+import pro18 from './pro18.png'
+import pro19 from './pro19.png'
+import pro20 from './pro20.png'
+import pro21 from './pro21.png'
+import pro_22 from './pro_22.png'
+import pro_23 from './pro_23.png'
+import pro_24 from './pro_24.png'
+import pro_25 from './pro_25.png'
+import pro_26 from './pro_26.png'
+import pro_27 from './pro_27.png'
+import pro_28 from './pro_28.png'
+import pro_29 from './pro_29.png'
+import pro_30 from './pro_30.png'
+import pro_31 from './pro_31.png'
+ 
+
+ 
 import p_img32 from './p_img32.png'
 import p_img33 from './p_img33.png'
 import p_img34 from './p_img34.png'
@@ -65,7 +67,6 @@ import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
 
 
-
 import logo from './logo.png'
 import hero_img from './hero_img.png'
 import cart_icon from './cart_icon.png'
@@ -84,29 +85,8 @@ import contact_img from './contact_img.png'
 import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
-import Beauty from './Beauty.png'
-import Books from './Books.png'
-import  Events from './Events.png'
-import  Fashion from './Fashion.png'
-import  food from './food.png'
-import Herbal_care from './Herbal_care.png'
-import  Jewelry from './Jewelry.png'
-import  kitchen from './kitchen.png'
-import   Movie from './Movie.png'
-import   Music from './Music.png'
-
 
 export const assets = {
-    Beauty,
-    Books,
-    Events,
-    Fashion,
-    Herbal_care,
-    Jewelry,
-    Movie,
-    Music,
-    kitchen,
-    food,
     logo,
     hero_img,
     cart_icon,
@@ -128,134 +108,134 @@ export const assets = {
 }
 
 export const products = [
-    
-    
     {
-        _id: "glow",
-        name: "Superfood Glow Priming Moisturiser",
-        description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
-        price:349,
-        image:[pro_1],
-        category:"Face",
-        subCategory:"Dry",
-        brand : 'Brand A',
-        date:18022025,
-        bestseller:true
+        _id: "aaaaa",
+        name: "Women Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 100,
+        image: [pro_1],
+        category: "Lips",
+        skinType: "Oliy",
+        
+        date: 1716634345448,
+        bestseller: true
     },
     {
-        _id: "glow_1",
-        name: "Restorative Floral Bath",
-        description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
-        price:249,
-        image:[pro_2],
-        category:"Eyes",
-        subCategory:"skin",
-       
-        date:18022025,
-        bestseller:true
+        _id: "aaaab",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 200,
+        image: [pro11,pro12,pro13,pro14],
+        category: "Face",
+        skinType: "Oliy",
+        sizes: ["M", "L", "XL"],
+        date: 1716621345448,
+        bestseller: true
     },
     {
-        _id: "glow_2",
-        name: "Body Hydrating Cream",
-        description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
-        price:299,
-        image:[pro_3],
-        category:"skincare",
-        subCategory:"skin",
-       
-        date:18022025,
-        bestseller:true
+        _id: "aaaac",
+        name: "Girls Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 220,
+        image: [pro_2],
+        category: "Hair",
+        skinType: "Oliy",
+        
+        date: 1716234545448,
+        bestseller: true
     },
     {
-        _id: "glow_3",
-        name: "Olaplex No. 7 Bonding Oil",
-        description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
-        price:199,
-        image:[pro_4],
-        category:"oil",
-        subCategory:"hairoil",
-        date:18022025,
-        bestseller:true
+        _id: "aaaad",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 110,
+        image: [pro_3],
+        category: "Face",
+        skinType: "Oliy",
+        sizes: ["S", "M", "XXL"],
+        date: 1716621345448,
+        bestseller: true
     },
     {
-        _id: "glow_4",
-        name: "Perfect Hair Day",
-        description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
-        price:399,
-        image:[pro_5],
-        category:"oil",
-        subCategory:"hairoil",
-        date:18022025,
-        bestseller:true
+        _id: "aaaae",
+        name: "Women Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 130,
+        image: [pro_4],
+        category: "Lips",
+        skinType: "Oliy",
+        sizes: ["M", "L", "XL"],
+        date: 1716622345448,
+        bestseller: true
     },
     {
-        _id: "glow_5",
-        name: "Ambre Vanille Honey Bath",
-        description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
-        price:399,
-        image:[pro_6],
-        category:"skincare",
-        subCategory:"skin",
-        date:18022025,
-        bestseller:true
+        _id: "aaaaf",
+        name: "Girls Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 140,
+        image: [pro_5],
+        category: "Hair",
+        skinType: "Oliy",
+        
+        date: 1716623423448,
+        bestseller: true
     },
     {
-        _id: "glow_6",
-        name: "Drive Me Glazy Lip Gloss",
-        description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
-        price:199,
-        image:[pro_7],
-        category:"lips",
-        subCategory:"lips_gloss",
-       
-        date:18022025,
-        bestseller:true
+        _id: "aaaag",
+        name: "Men Tapered Fit Flat-Front Trousers",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 190,
+        image: [pro_6],
+        category: "Face",
+        skinType: "Dry",
+        
+        date: 1716621542448,
+        bestseller: false
     },
     {
-        _id: "glow_7",
-        name: "Hydrating Gel Cream",
-        description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
-        price:399,
-        image:[pro_8],
-        category:"face",
-        subCategory:"face_cream",
-       
-        date:18022025,
-        bestseller:true
+        _id: "aaaah",
+        name: "Men Round Neck Pure Cotton T-shirt",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 140,
+        image: [pro_7],
+        category: "Face",
+        skinType: "Oliy",
+               date: 1716622345448,
+        bestseller: false
     },
     {
-        _id: "glow_8",
-        name: "Hydrating Longwear Foundation",
-        description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
-        price:249,
-        image:[pro_9],
-        category:"lips",
-        subCategory:"lips_gloss",
-       
-        date:18022025,
-        bestseller:true
+        _id: "aaaai",
+        name: "Girls Round Neck Cotton Top",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 100,
+        image: [pro_8],
+        category: "Hair",
+        skinType: "Oliy",
+        sizes: ["M", "L", "XL"],
+        date: 1716621235448,
+        bestseller: false
     },
     {
-        _id: "glow_9",
-        name: "Beautifully Bare Foundation Serum",
-        description: "Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.",
-        price:399,
-        image:[pro_10],
-        category:"face",
-        subCategory:"face_cream",
-       
-        date:18022025,
-        bestseller:true
+        _id: "aaaaj",
+        name: "Men Tapered Fit Flat-Front Trousers",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 110,
+        image: [pro_9],
+        category: "Face",
+        skinType: "Dry",
+        
+        date: 1716622235448,
+        bestseller: false
     },
-
     {
         _id: "aaaak",
         name: "Men Round Neck Pure Cotton T-shirt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 120,
-        image:[pro_2],
-
-         
+        image: [pro_10],
+        category: "Face",
+        skinType: "Oliy",
+        
         date: 1716623345448,
         bestseller: false
     },
@@ -264,10 +244,10 @@ export const products = [
         name: "Men Round Neck Pure Cotton T-shirt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 150,
-        image: [p_img12],
-
-
-        date: 1716624445448,
+        image: [pro11],
+        category: "Face",
+        skinType: "Oliy",
+               date: 1716624445448,
         bestseller: false
     },
     {
@@ -275,10 +255,10 @@ export const products = [
         name: "Women Round Neck Cotton Top",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 130,
-        image: [p_img13],
-
-
-        date: 1716625545448,
+        image: [pro12],
+        category: "Lips",
+        skinType: "Oliy",
+               date: 1716625545448,
         bestseller: false
     },
     {
@@ -286,10 +266,10 @@ export const products = [
         name: "Boy Round Neck Pure Cotton T-shirt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 160,
-        image: [p_img14],
-
-
-        date: 1716626645448,
+        image: [pro13],
+        category: "Hair",
+        skinType: "Oliy",
+               date: 1716626645448,
         bestseller: false
     },
     {
@@ -297,9 +277,10 @@ export const products = [
         name: "Men Tapered Fit Flat-Front Trousers",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 140,
-        image: [p_img15],
-
-        date: 1716627745448,
+        image: [pro14],
+        category: "Face",
+        skinType: "Dry",
+               date: 1716627745448,
         bestseller: false
     },
     {
@@ -307,10 +288,10 @@ export const products = [
         name: "Girls Round Neck Cotton Top",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 170,
-        image: [p_img16],
-
-
-        date: 1716628845448,
+        image: [ pro15],
+        category: "Hair",
+        skinType: "Oliy",
+               date: 1716628845448,
         bestseller: false
     },
     {
@@ -318,9 +299,10 @@ export const products = [
         name: "Men Tapered Fit Flat-Front Trousers",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 150,
-        image: [p_img17],
-
-        date: 1716629945448,
+        image: [ pro16],
+        category: "Face",
+        skinType: "Dry",
+               date: 1716629945448,
         bestseller: false
     },
     {
@@ -328,10 +310,10 @@ export const products = [
         name: "Boy Round Neck Pure Cotton T-shirt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 180,
-        image: [p_img18],
-
-
-        date: 1716631045448,
+        image: [ pro17],
+        category: "Hair",
+        skinType: "Oliy",
+               date: 1716631045448,
         bestseller: false
     },
     {
@@ -339,10 +321,10 @@ export const products = [
         name: "Boy Round Neck Pure Cotton T-shirt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 160,
-        image: [p_img19],
-
-
-        date: 1716632145448,
+        image: [ pro18],
+        category: "Hair",
+        skinType: "Oliy",
+               date: 1716632145448,
         bestseller: false
     },
     {
@@ -350,9 +332,10 @@ export const products = [
         name: "Women Palazzo Pants with Waist Belt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 190,
-        image: [p_img20],
-
-        date: 1716633245448,
+        image: [ pro19],
+        category: "Lips",
+        skinType: "Dry",
+               date: 1716633245448,
         bestseller: false
     },
     {
@@ -360,10 +343,10 @@ export const products = [
         name: "Women Zip-Front Relaxed Fit Jacket",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 170,
-        image: [p_img21],
-
-        subCategory: "Winterwear",
-        date: 1716634345448,
+        image: [ pro20],
+        category: "Lips",
+        skinType: " Sensitive",
+               date: 1716634345448,
         bestseller: false
     },
     {
@@ -371,9 +354,10 @@ export const products = [
         name: "Women Palazzo Pants with Waist Belt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 200,
-        image: [p_img22],
-
-        date: 1716635445448,
+        image: [pro21],
+        category: "Lips",
+        skinType: "Dry",
+               date: 1716635445448,
         bestseller: false
     },
     {
@@ -381,10 +365,10 @@ export const products = [
         name: "Boy Round Neck Pure Cotton T-shirt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 180,
-        image: [p_img23],
-
-
-        date: 1716636545448,
+        image: [pro_22],
+        category: "Hair",
+        skinType: "Oliy",
+               date: 1716636545448,
         bestseller: false
     },
     {
@@ -392,10 +376,10 @@ export const products = [
         name: "Boy Round Neck Pure Cotton T-shirt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 210,
-        image: [p_img24],
-
-
-        date: 1716637645448,
+        image: [pro_23],
+        category: "Hair",
+        skinType: "Oliy",
+               date: 1716637645448,
         bestseller: false
     },
     {
@@ -403,10 +387,10 @@ export const products = [
         name: "Girls Round Neck Cotton Top",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 190,
-        image: [p_img25],
-
-
-        date: 1716638745448,
+        image: [pro_24],
+        category: "Hair",
+        skinType: "Oliy",
+               date: 1716638745448,
         bestseller: false
     },
     {
@@ -414,10 +398,10 @@ export const products = [
         name: "Women Zip-Front Relaxed Fit Jacket",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 220,
-        image: [p_img26],
-
-        subCategory: "Winterwear",
-        date: 1716639845448,
+        image: [pro_25],
+        category: "Lips",
+        skinType: " Sensitive",
+               date: 1716639845448,
         bestseller: false
     },
     {
@@ -425,10 +409,10 @@ export const products = [
         name: "Girls Round Neck Cotton Top",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 200,
-        image: [p_img27],
-
-
-        date: 1716640945448,
+        image: [pro_26],
+        category: "Hair",
+        skinType: "Oliy",
+               date: 1716640945448,
         bestseller: false
     },
     {
@@ -436,10 +420,10 @@ export const products = [
         name: "Men Slim Fit Relaxed Denim Jacket",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 230,
-        image: [p_img28],
-
-        subCategory: "Winterwear",
-        date: 1716642045448,
+        image: [pro_27],
+        category: "Face",
+        skinType: " Sensitive",
+               date: 1716642045448,
         bestseller: false
     },
     {
@@ -447,10 +431,10 @@ export const products = [
         name: "Women Round Neck Cotton Top",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 210,
-        image: [p_img29],
-
-
-        date: 1716643145448,
+        image: [pro_28],
+        category: "Lips",
+        skinType: "Oliy",
+               date: 1716643145448,
         bestseller: false
     },
     {
@@ -458,10 +442,10 @@ export const products = [
         name: "Girls Round Neck Cotton Top",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 240,
-        image: [p_img30],
-
-
-        date: 1716644245448,
+        image: [pro_29],
+        category: "Hair",
+        skinType: "Oliy",
+               date: 1716644245448,
         bestseller: false
     },
     {
@@ -469,10 +453,10 @@ export const products = [
         name: "Men Round Neck Pure Cotton T-shirt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 220,
-        image: [p_img31],
-
-
-        date: 1716645345448,
+        image: [pro_30],
+        category: "Face",
+        skinType: "Oliy",
+               date: 1716645345448,
         bestseller: false
     },
     {
@@ -480,8 +464,10 @@ export const products = [
         name: "Men Round Neck Pure Cotton T-shirt",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 250,
-        image: [p_img32],
-        date: 1716646445448,
+        image: [pro_31],
+        category: "Face",
+        skinType: "Oliy",
+               date: 1716646445448,
         bestseller: false
     },
     {
@@ -490,9 +476,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 230,
         image: [p_img33],
-
-
-        date: 1716647545448,
+        category: "Hair",
+        skinType: "Oliy",
+               date: 1716647545448,
         bestseller: false
     },
     {
@@ -501,9 +487,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 260,
         image: [p_img34],
-
-
-        date: 1716648645448,
+        category: "Lips",
+        skinType: "Oliy",
+               date: 1716648645448,
         bestseller: false
     },
     {
@@ -512,9 +498,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 240,
         image: [p_img35],
-
-        subCategory: "Winterwear",
-        date: 1716649745448,
+        category: "Lips",
+        skinType: " Sensitive",
+               date: 1716649745448,
         bestseller: false
     },
     {
@@ -523,9 +509,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 270,
         image: [p_img36],
-
-        subCategory: "Winterwear",
-        date: 1716650845448,
+        category: "Lips",
+        skinType: " Sensitive",
+               date: 1716650845448,
         bestseller: false
     },
     {
@@ -534,9 +520,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 250,
         image: [p_img37],
-
-
-        date: 1716651945448,
+        category: "Lips",
+        skinType: "Oliy",
+               date: 1716651945448,
         bestseller: false
     },
     {
@@ -545,9 +531,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 280,
         image: [p_img38],
-
-
-        date: 1716653045448,
+        category: "Face",
+        skinType: "Oliy",
+               date: 1716653045448,
         bestseller: false
     },
     {
@@ -556,9 +542,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 260,
         image: [p_img39],
-
-
-        date: 1716654145448,
+        category: "Face",
+        skinType: "Oliy",
+               date: 1716654145448,
         bestseller: false
     },
     {
@@ -567,9 +553,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 290,
         image: [p_img40],
-
-        subCategory: "Winterwear",
-        date: 1716655245448,
+        category: "Face",
+        skinType: " Sensitive",
+               date: 1716655245448,
         bestseller: false
     },
     {
@@ -578,9 +564,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 270,
         image: [p_img41],
-
-
-        date: 1716656345448,
+        category: "Face",
+        skinType: "Oliy",
+               date: 1716656345448,
         bestseller: false
     },
     {
@@ -589,9 +575,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 300,
         image: [p_img42],
-
-
-        date: 1716657445448,
+        category: "Hair",
+        skinType: "Oliy",
+               date: 1716657445448,
         bestseller: false
     },
     {
@@ -600,8 +586,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 280,
         image: [p_img43],
-
-        date: 1716658545448,
+        category: "Hair",
+        skinType: "Dry",
+               date: 1716658545448,
         bestseller: false
     },
     {
@@ -610,9 +597,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 310,
         image: [p_img44],
-
-        subCategory: "Winterwear",
-        date: 1716659645448,
+        category: "Lips",
+        skinType: " Sensitive",
+               date: 1716659645448,
         bestseller: false
     },
     {
@@ -621,9 +608,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 290,
         image: [p_img45],
-
-        subCategory: "Winterwear",
-        date: 1716660745448,
+        category: "Face",
+        skinType: " Sensitive",
+               date: 1716660745448,
         bestseller: false
     },
     {
@@ -632,9 +619,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 320,
         image: [p_img46],
-
-        subCategory: "Winterwear",
-        date: 1716661845448,
+        category: "Face",
+        skinType: " Sensitive",
+               date: 1716661845448,
         bestseller: false
     },
     {
@@ -643,8 +630,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 300,
         image: [p_img47],
-
-        date: 1716662945448,
+        category: "Hair",
+        skinType: "Dry",
+               date: 1716662945448,
         bestseller: false
     },
     {
@@ -653,9 +641,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 330,
         image: [p_img48],
-
-        subCategory: "Winterwear",
-        date: 1716664045448,
+        category: "Face",
+        skinType: " Sensitive",
+               date: 1716664045448,
         bestseller: false
     },
     {
@@ -664,8 +652,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 310,
         image: [p_img49],
-
-        date: 1716665145448,
+        category: "Hair",
+        skinType: "Dry",
+               date: 1716665145448,
         bestseller: false
     },
     {
@@ -674,8 +663,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 340,
         image: [p_img50],
-
-        date: 1716666245448, bestseller: false
+        category: "Hair",
+        skinType: "Dry",
+               date: 1716666245448, bestseller: false
     },
     {
         _id: "aaaby",
@@ -683,9 +673,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 320,
         image: [p_img51],
-
-        subCategory: "Winterwear",
-        date: 1716667345448,
+        category: "Lips",
+        skinType: " Sensitive",
+               date: 1716667345448,
         bestseller: false
     },
     {
@@ -694,9 +684,9 @@ export const products = [
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
         price: 350,
         image: [p_img52],
-
-        subCategory: "Winterwear",
-        date: 1716668445448,
+        category: "Face",
+        skinType: " Sensitive",
+               date: 1716668445448,
         bestseller: false
     }
 

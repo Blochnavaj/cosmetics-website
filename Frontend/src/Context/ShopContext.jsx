@@ -10,7 +10,7 @@ import { products } from "../assets/frontend_assets/assets";
     const delivery_fees = 10;
 
     const [search , setSearch] = useState('');
-    const [showSearch , setShowSearch] = useState(true);
+    const [showSearch , setShowSearch] = useState(false);
 
 
     const value = {

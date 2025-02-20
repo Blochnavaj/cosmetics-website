@@ -10,7 +10,7 @@ const skinTypes = ['Oily', 'Dry', 'Sensitive'];
 const categories = ['Face', 'Eyes', 'Lips', 'Nails', 'Hair', 'Body'];
 
 function Collection() {
-  const { products } = useContext(ShopContext);
+  const { products, search , setSearch } = useContext(ShopContext);
   const [showFilter, setShowFilter] = useState(false);
   const [filterProducts, setFilterProducts] = useState([]);
  
@@ -23,6 +23,14 @@ const [sortOption, setSortOption] = useState('relevant'); // Sorting state
 
 useEffect(() => {
   let filtered = products;
+
+    // Apply search filter
+    if (search.trim() !== '') {
+      filtered = filtered.filter((product) =>
+        product.name.toLowerCase().includes(search.toLowerCase())
+      );
+    }
+ 
 
   if (selectedCategory.length > 0) {
     filtered = filtered.filter((product) => selectedCategory.includes(product.category));
@@ -37,7 +45,7 @@ useEffect(() => {
   }
 
   setFilterProducts(filtered);
-}, [selectedCategory, selectedBrands, selectedSkinTypes, products]);
+}, [selectedCategory, selectedBrands, selectedSkinTypes, products,search]);
 
 
   useEffect(() => {
