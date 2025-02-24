@@ -1,10 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { ShopContext } from '../Context/ShopContext';
 import { FaTrash } from "react-icons/fa";  // Trash Icon
+import { useNavigate } from 'react-router-dom';
 
 function Cart() {
   const { currency, products, cartItem, addToCard, removeFromCart, deleteFromCart } = useContext(ShopContext);
   const [cartData, setCartData] = useState([]);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!products || products.length === 0) return; 
@@ -26,8 +29,11 @@ function Cart() {
     setCartData(tempData);
   }, [cartItem, products]);
 
-  // Calculate total price
-  const totalPrice = cartData.reduce((total, item) => total + item.price * item.quantity, 0);
+  // Calculate prices
+  const subtotal = cartData.reduce((total, item) => total + item.price * item.quantity, 0);
+  const discount = subtotal * 0.1; // 10% discount
+  const shippingFee = subtotal > 100 ? 0 : 10; // Free shipping over $100
+  const totalPrice = subtotal - discount + shippingFee;
 
   return (
     <div className="container mx-auto px-4 py-10">
@@ -79,9 +85,27 @@ function Cart() {
 
       {/* Total Price & Checkout */}
       {cartData.length > 0 && (
-        <div className="mt-10 text-right sm:text-right">
-          <h2 className="text-xl font-bold">Total: {currency} {totalPrice.toFixed(2)}</h2>
-          <button className="mt-3 px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">
+        <div className="mt-10 p-6 bg-white shadow-md rounded-lg w-full sm:w-96 mx-auto">
+          <h2 className="text-lg font-semibold text-gray-700 border-b pb-3">Order Summary</h2>
+          <div className="mt-4 text-gray-600 space-y-2">
+            <div className="flex justify-between">
+              <span>Subtotal:</span>
+              <span className="font-medium">{currency} {subtotal.toFixed(2)}</span>
+            </div>
+            <div className="flex justify-between text-green-600">
+              <span>Discount (10%):</span>
+              <span>-{currency} {discount.toFixed(2)}</span>
+            </div>
+            <div className="flex justify-between text-gray-600">
+              <span>Shipping Fee:</span>
+              <span>{currency} {shippingFee.toFixed(2)}</span>
+            </div>
+            <div className="flex justify-between text-xl font-bold mt-3">
+              <span>Total:</span>
+              <span>{currency} {totalPrice.toFixed(2)}</span>
+            </div>
+          </div>
+          <button onClick={() => navigate('/place-order')}  className="mt-5 w-full px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition">
             Proceed to Checkout
           </button>
         </div>

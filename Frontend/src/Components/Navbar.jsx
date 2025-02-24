@@ -41,11 +41,14 @@ function Navbar() {
         <div className='flex items-center gap-4'>
           <img onClick={() => setShowSearch(true)} src={assets.search_icon} className='w-5 cursor-pointer hover:text-gray-600' alt="" />
           <div className='relative group'>
-            <img  src={assets.profile_icon}  className='h-5 cursor-pointer' alt="" />
-            <div className='absolute right-0 mt-2 hidden group-hover:block bg-white shadow-lg border rounded-md z-50  text-nowrap'>
+<Link to='/login'>
+<img  src={assets.profile_icon}  className='h-5 cursor-pointer' alt="" />
+
+</Link>      
+      <div className='absolute right-0 mt-2 hidden group-hover:block bg-white shadow-lg border rounded-md z-50  text-nowrap'>
               <div className='flex flex-col items-center gap-2 bg-slate-100 text-gray-500 py-3 px-5 rounded'>
                 <p className='hover:text-black cursor-pointer'>My Profile</p>
-                <p className='hover:text-black cursor-pointer'>Orders</p>
+                <Link to='/orders' className='hover:text-black cursor-pointer'>Orders</Link>
                 <p className='hover:text-black cursor-pointer'>Log-Out</p>
               </div>
             </div>

@@ -96,12 +96,12 @@ import   Fashion from './Fashion.png'
 import  kitchen from './kitchen.png'
 import  Music from './Music.png'
 import  Movie from './Movie.png'
-import summer_collection from './summer_collection.jpg'
-import winter_collection from './winter_collection.jpg'
+import Banner_1 from './Banner_1.jpg'
+import Banner_2 from './Banner_2.jpg'
 
 
 export const assets = {
-   
+    Banner_1, Banner_2,
     pro11,
     pro12,
     pro13,pro14,pro15,pro16,pro17,pro18,
@@ -123,8 +123,7 @@ export const assets = {
     razorpay_logo,
     stripe_logo,
     cross_icon,
-    Beauty,Events,food,Jewelry,kitchen,Home_care,Herbal_care,Books, Fashion,Music,Movie, summer_collection,
-    winter_collection
+    Beauty,Events,food,Jewelry,kitchen,Home_care,Herbal_care,Books, Fashion,Music,Movie,  
 }
 
 export const products = [

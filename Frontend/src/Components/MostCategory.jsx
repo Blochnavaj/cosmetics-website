@@ -12,7 +12,7 @@ function MostCategory() {
         <div className="w-full  sm:w-[40%] lg:w-[50%]   relative flex flex-col items-center">
           <div className="overflow-hidden       group w-full">
             <img
-              src={assets.summer_collection} 
+              src={assets.Banner_1} 
               alt="Summer Collection"
               className="w-full h-auto  object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
             />
@@ -27,7 +27,7 @@ function MostCategory() {
         <div className="w-full sm:w-[40%]   lg:w-[50%]  relative flex flex-col items-center">
           <div className="overflow-hidden   group w-full">
             <img
-              src={assets.winter_collection} 
+              src={assets.Banner_2} 
               alt="Winter Collection"
               className="w-full h-auto object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
             />

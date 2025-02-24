@@ -6,13 +6,13 @@ import OurPolicy from '../Components/OurPolicy'
 import NewsLetterBox from '../Components/NewsLetterBox'
 import AllProductList from '../Components/AllProductList'
 import MostCategory from '../Components/MostCategory'
-
+ 
 function Home() {
   return (
     <div> 
        <Hero/>
        <AllProductList/>
-       <LatestCollection/>
+        <LatestCollection/>
        <BestSeller/>
        <MostCategory/>
        <OurPolicy/>
