@@ -7,7 +7,7 @@ function OurPolicy() {
         <>
 
             <div className='text-center m-auto mt-4'>
-                <Tittle text1='Our' text2='Policy' />
+                <Tittle text1='Your' text2='Policy' />
             </div>
             <div className='flex flex-col mt-2 justify-around  text-center sm:gap-5 sm:flex-row '>
 

@@ -9,17 +9,18 @@ import About from "./Pages/About";
 import Collection from "./Pages/Collection";
 import Product from "./Pages/Product";
 import Cart from "./Pages/Cart";
-import Navbar from "./Components/Navbar"
+import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import SearchBar from "./Components/SearchBar";
-
+import ScrollToTop from "./Components/ScrollToTop";  // 👈 Import ScrollToTop
 
 function App() {
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
       <BrowserRouter basename="/cosmetics-website">
+        <ScrollToTop />  {/* 👈 Add this line for scrolling to top on route change */}
         <Navbar />
-        <SearchBar/>
+        <SearchBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/collection" element={<Collection />} />
@@ -31,7 +32,7 @@ function App() {
           <Route path="/place-order" element={<PlaceOrder />} />
           <Route path="/orders" element={<Orders />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );
