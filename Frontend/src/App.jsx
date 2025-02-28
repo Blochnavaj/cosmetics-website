@@ -13,11 +13,15 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import SearchBar from "./Components/SearchBar";
 import ScrollToTop from "./Components/ScrollToTop";  // 👈 Import ScrollToTop
+import { ToastContainer  } from 'react-toastify';
+
 
 function App() {
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
       <BrowserRouter basename="/cosmetics-website">
+      <ToastContainer />
+
         <ScrollToTop />  {/* 👈 Add this line for scrolling to top on route change */}
         <Navbar />
         <SearchBar />
