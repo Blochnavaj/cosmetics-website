@@ -10,18 +10,19 @@ function BestSeller() {
   useEffect(() => {
     console.log("Products Data in BestSeller Component:", products);
 
+    // Log products to debug
     products.forEach((product) => {
       console.log(`Product Name: ${product.name}, bestSeller: ${product.bestSeller}`);
     });
 
-    // ✅ Ensure proper boolean handling
+    // ✅ Properly filter best seller products
     const bestSellerProducts = products.filter(
-      (product) => product.bestSeller === true || product.bestSeller === "true"
+      (product) => Boolean(product.bestSeller) === true
     );
 
-    console.log("Filtered Best Seller Products (After Fix):", bestSellerProducts);
+    console.log("Filtered Best Seller Products:", bestSellerProducts);
 
-    // ✅ Use the correct variable name
+    // ✅ Show only top 5 products
     setBestSeller(bestSellerProducts.slice(0, 5));
   }, [products]);
 

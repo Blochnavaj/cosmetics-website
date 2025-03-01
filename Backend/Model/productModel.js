@@ -27,8 +27,8 @@ const productSchema = new mongoose.Schema({
     },
     bestSeller: {
         type: Boolean,
-        
-
+        required: true,
+        default: false
     },
     date: {
         type: Number,
@@ -36,6 +36,6 @@ const productSchema = new mongoose.Schema({
     }
 })
 
-const ProductModel = mongoose.model.product || mongoose.model('product', productSchema);
+const ProductModel = mongoose.models.product || mongoose.model('product', productSchema);
 
 export default ProductModel
