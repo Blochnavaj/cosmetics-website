@@ -4,7 +4,7 @@ import { FaTrash } from "react-icons/fa";  // Trash Icon
 import { useNavigate } from 'react-router-dom';
 
 function Cart() {
-  const { currency, products, cartItem, addToCard, removeFromCart, deleteFromCart } = useContext(ShopContext);
+  const { currency, products, cartItem, addToCart, removeFromCart, deleteFromCart } = useContext(ShopContext);
   const [cartData, setCartData] = useState([]);
 
   const navigate = useNavigate();
@@ -66,7 +66,7 @@ function Cart() {
                 >-</button>
                 <span className="px-4">{item.quantity}</span>
                 <button 
-                  onClick={() => addToCard(item._id)} 
+                  onClick={() => addToCart(item._id)} 
                   className="px-2 py-1 bg-gray-300 hover:bg-gray-400 rounded-r"
                 >+</button>
               </div>

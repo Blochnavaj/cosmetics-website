@@ -5,6 +5,7 @@ import  connectDB  from './Config/db.js';
 import connectClodinary from './Config/cloudinary.js';
 import userRouter from './Routes/userRoute.js';
 import ProductRoute from './Routes/productRoute.js';
+import router from './Routes/cartRoute.js';
 
 dotenv.config();
 
@@ -24,6 +25,7 @@ app.use(cors());
 //api endpint 
 app.use('/api/user',userRouter); // ------> (/api/user/)
 app.use('/api/v1', ProductRoute); // -------->(/api/v1/)
+app.use('/api/cart', router); // ------> (/api/cart/)
 
 
 //port listing 

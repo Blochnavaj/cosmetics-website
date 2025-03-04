@@ -12,7 +12,7 @@ import Cart from "./Pages/Cart";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import SearchBar from "./Components/SearchBar";
-import ScrollToTop from "./Components/ScrollToTop";  // 👈 Import ScrollToTop
+import ScrollToTop from "./Components/ScrollToTop"; 
 import { ToastContainer  } from 'react-toastify';
 
 

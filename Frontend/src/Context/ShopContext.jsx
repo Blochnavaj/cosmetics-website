@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import axios from 'axios';
-import { toast } from "react-toastify";
+ import { toast } from "react-toastify";
 
 export const ShopContext = createContext();
 
@@ -9,10 +9,13 @@ const ShopContextProvider = (props) => {
     const delivery_fees = 10;
     const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
+    
+
     const [search, setSearch] = useState('');
     const [showSearch, setShowSearch] = useState(false);
     const [cartItem, setCartItem] = useState({});
     const [products, setProducts] = useState([]);
+    const [token ,setToken] = useState({});
 
     const addToCart = (itemId) => {
         setCartItem((prevCart) => ({
@@ -47,12 +50,12 @@ const ShopContextProvider = (props) => {
 
     const getProductData = async () => {
         try {
-            console.log("Fetching product data...");
+             
             const response = await axios.get(`${backendUrl}/api/v1/list`);
-            console.log("API Response:", response.data);
+             
 
             if (response.data.success) {
-                console.log("Products before setting state:", response.data.products);
+                 
                 setProducts(response.data.products);
             } else {
                 toast.error(response.data.message);
@@ -75,7 +78,7 @@ const ShopContextProvider = (props) => {
         search, setSearch,
         showSearch, setShowSearch,
         cartItem, addToCart, getCartCount, getProductData,
-        deleteFromCart, removeFromCart
+        deleteFromCart, removeFromCart, token , setToken,  
     };
 
     return (
