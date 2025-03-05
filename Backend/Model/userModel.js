@@ -3,24 +3,23 @@ import mongoose from "mongoose";
 const UserSchema = new mongoose.Schema({
     name: {
         type: String,
-        require: true
+        required: true
     },
     email: {
         type: String,
-        require: true,
+        required: true,
         unique: true
     },
     password: {
         type: String,
-        require: true,
-        unique: true
+        required: true
     },
     cartData: {
-        type: Object,
-        default: {}
+        type: Array,
+        default: []
     }
-}, { minimize: false })
+}, { minimize: false });
 
-const userModel = mongoose.model.user || mongoose.model('user', UserSchema);
+const userModel = mongoose.models.user || mongoose.model('User', UserSchema);
 
 export default userModel;

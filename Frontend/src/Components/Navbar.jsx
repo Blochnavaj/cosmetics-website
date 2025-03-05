@@ -11,8 +11,9 @@ function Navbar() {
   const { showSearch, setShowSearch, getCartCount, token , setToken, setCartItem } = useContext(ShopContext);
  
    const logOut =() => {
+    navigate('/login')
     localStorage.removeItem('token',);
-    setToken(null);
+    setToken("");
     import("react-toastify").then(({ toast }) => {
       toast.success("Logged out successfully! 🚀", {
         autoClose: 1500, // Notification will disappear in 1.5 seconds
@@ -24,8 +25,8 @@ function Navbar() {
         theme: "colored",
       });
     });
-    setCartItem({});
-    navigate('/login')
+    setCartItem([]);
+    
    }
   return (
     <>
@@ -76,11 +77,11 @@ function Navbar() {
        }
           </div>
           <Link to='/cart' className='relative'>
-            <img src={assets.cart_icon} className='w-5 min-w-5' alt="Cart" />
-            <p className='absolute top-[12px] right-[-6px] w-4 h-4 bg-black text-center text-white leading-4 rounded-full aspect-square text-[8px]'>
-              {getCartCount()}
-            </p>
-          </Link>
+        <img src={assets.cart_icon} className='w-5 min-w-5' alt="Cart" />
+        <p className='absolute top-[12px] right-[-6px] w-4 h-4 bg-black text-center text-white leading-4 rounded-full aspect-square text-[8px]'>
+            {getCartCount() || 0} {/* ✅ Ensure it always shows a number */}
+        </p>
+    </Link>
           <img 
             onClick={() => setVisible(true)} 
             src={assets.menu_icon} 
