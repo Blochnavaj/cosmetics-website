@@ -14,6 +14,7 @@ import Footer from "./Components/Footer";
 import SearchBar from "./Components/SearchBar";
 import ScrollToTop from "./Components/ScrollToTop"; 
 import { ToastContainer  } from 'react-toastify';
+import Verify from "./Pages/Verify";
 
 
 function App() {
@@ -35,6 +36,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/place-order" element={<PlaceOrder />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/verify" element={<Verify />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

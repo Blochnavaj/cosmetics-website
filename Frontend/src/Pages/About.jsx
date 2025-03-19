@@ -114,7 +114,7 @@ function About() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-5xl font-playfair font-bold text-gray-800 mb-6">
-              <span className="bg-gradient-to-r from-rose-300 to-rose-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gray-400 to-rose-400 bg-clip-text text-transparent">
                 About Our Essence
               </span>
             </h2>

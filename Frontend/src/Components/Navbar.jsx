@@ -69,8 +69,7 @@ function Navbar() {
        {
         token &&      <div className='absolute right-0 mt-2 hidden group-hover:block bg-white shadow-lg border rounded-md z-50 text-nowrap'>
         <div className='flex flex-col items-center gap-2 bg-slate-100 text-gray-500 py-3 px-5 rounded'>
-          <p className='hover:text-black cursor-pointer'>My Profile</p>
-          <Link to='/orders' className='hover:text-black cursor-pointer'>Orders</Link>
+           <Link to='/orders' className='hover:text-black cursor-pointer'>Orders</Link>
           <p onClick={logOut} className='hover:text-black cursor-pointer'>Log-Out</p>
         </div>
       </div>

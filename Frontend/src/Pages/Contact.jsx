@@ -23,7 +23,7 @@ function Contact() {
             transition={{ delay: 0.2 }}
           >
             <h2 className="text-4xl font-playfair font-bold text-gray-800 mb-4">
-              <span className="bg-gradient-to-r from-rose-400 to-rose-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gray-400 to-rose-400 bg-clip-text text-transparent">
                 Connect With Us
               </span>
             </h2>
